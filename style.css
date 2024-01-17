@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: gray;
-}
+
 
 .logo {
   height: 33px;
@@ -65,14 +63,24 @@ body {
   border-radius: 50%; /* This creates a circular shape */
 }
 .profile-pic {
-  width: 100%; /* Make sure the image takes up the entire container */
-  height: auto; /* Maintain the aspect ratio of the image */
+  width: 35px; /* Make sure the image takes up the entire container */
+  margin-top: 3px;
+
+  height: 35px; /* Maintain the aspect ratio of the image */
   border-radius: 50%; /* This ensures the image itself is also circular */
   display: block;
+  size: 10px;
+}
+.nav-item {
+  height: 70px;
+  bottom: 10px;
+}
+.nav-items a {
+  margin-left: 8px;
+  margin-bottom: 2px;
 }
 
 .vertical-line {
- 
   height: 100%;
   width: 1px;
   background-color: #110f0f; /* Set the color of the vertical line */
@@ -96,22 +104,81 @@ body {
   display: grid;
   place-items: center;
   font-size: 20px;
- 
 }
-.all-apps a{
- font-size:12px;
- font-style: initial;
- bottom: 10px;
+.all-apps a {
+  font-size: 12px;
+  font-style: initial;
+  bottom: 10px;
 }
-.link{
+.link {
   font-size: 14px;
- 
+
   width: 100px;
   margin-left: 30px;
 }
-.link a{
+.link a {
   color: #915907;
-  
 }
 
+.my-name {
+  font-size: 16px;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.job-name {
+  font-size: 12px;
+}
+.view-impressions {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-views,
+.impression {
+padding: 2px 3px;
+  
+  cursor: pointer;
+  margin-right: 10px;
+
+  /* transition: background-color 0.3s ease; */
+}
+
+.profile-views:hover {
+  background-color: #e0e0e0; /* Change this to your desired highlight color */
+  width: 100%;
+}
+
+.impression:hover {
+  background-color: #e0e0e0; /* Change this to your desired highlight color */
  
+}
+
+.view-impressions .label {
+  
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+ 
+}
+.impression .count{
+  padding-left: 106px;
+}
+.profile-views .count{
+  padding-left: 89px;
+}
+
+
+
+.count {
+  justify-content: space-between;
+  font-size: 13px;
+  color: #007bff; /* Change this to your desired color */
+  text-align: right;
+}
+.my-items:hover {
+  background-color: #ccc; /* Change this to the desired gray color */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  cursor: pointer;
+}

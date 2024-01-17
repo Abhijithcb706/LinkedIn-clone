@@ -1,162 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkedIn</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f7b65741f0.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class=" container-fluid " style="padding: 0 !important">
-      <nav
-        class="navbar display:flex-column  justify-content-between  navbar-expand-lg bg-body-tertiary fixed-top"
-        style="width: 1359px; height: 60px; padding: 0px 80px 0px 100px"
-       >
-        <div class=" d-flex justify-content-center">
-          <div class="search  ">
-            <img class="logo" src="./images/logo.png" alt="logo" />
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </div>
-              <!-- <button class="btn btn-outline-success" type="submit">
-              Search
-            </button> -->
-            </form>
-           
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>LinkedIn</title>
+   <link rel="stylesheet" href="./style.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer>
+   </script>
+   <script src="https://kit.fontawesome.com/f7b65741f0.js" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+   <div class="container-fluid" style="padding: 0 !important">
+     <nav class="navbar display:flex-column  justify-content-between  navbar-expand-lg bg-body-tertiary fixed-top"
+       style="width: 1359px; height: 60px; padding: 0px 80px 0px 100px">
+       <div class=" d-flex justify-content-center">
+         <div class="search  ">
+           <img class="logo" src="./images/logo.png" alt="logo" />
+           <form class="d-flex" role="search">
+             <div class="input-group">
+             <span class="input-group-text" style="background-color: #edf3f8; ">
+             <i class="fa-solid fa-magnifying-glass" ></i>
+             </span>
+
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+               style="background-color :#edf3f8; width: 280px;" />
           
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <div class="iconDiv d-flex align-items-center ">
-                  <div class=" d-flex flex-column  align-items-center  ">
-                    <i class="homIcon fa-solid fa-house align-item-center"></i>
-                    <a class="nav-link active" href="#">Home</a>
-                  </div>
-                <l class="nav-item">
-                 
-                 
-                  <i class="netIcon fa-solid fa-user-group w-0"></i>
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >My Network</a
-                  >
-                  </l>
-                </li>
-                <li class="nav-item align-items-center">
-                  <i class="jobIcon fa-solid fa-suitcase"></i>
-                  <a class="nav-link" href="#">Jobs</a>
-                </li>
-                <li class="nav-item align-items-center">
-                  <i class="msgIcon fa-solid fa-comment-dots"></i>
-                  <a class="nav-link" href="#">Messaging</a>
-                </li>
-                <li class="nav-item align-items-center">
-                  <i class="notIcon fa-solid fa-bell"></i>
-                  <a class="nav-link" href="#">Notifications</a>
-                </li>
-                <li class="nav-item dropdown align-items-center">
-                  <div class="container ">
-                   <img src="./images/IMG_7745.JPG" alt="pro pic" class="profile-pic"  />
-                </div>
-                  <a
-                    class="proText nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Me
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+             </div>
+             </div>
+          </form>
+         
 
-                 
-                </li>
-              
-              </ul>
-              <div class="vertical-line"> </div>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-              <!-- --------------------after vertical_line------------------- -->
-              <li class="all-apps dropdown align-items-center" style="list-style-type: none";>
-                <div class="allApp container ">
-                  <i class="fa-solid fa-table-cells"></i>
-                </div>
-                <a
-                  class=" nav-link dropdown-toggle"
-                  href="#"
-                 
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  For Bussiness
-                </a>
-                <ul class=" dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <div class="iconDiv d-flex align-items-center ">
+               <div class=" d-flex flex-column  align-items-center  ">
+                 <i class="homIcon fa-solid fa-house align-item-center"></i>
+                 <a class="nav-link active" href="#">Home</a>
+               </div>
+               <l class="nav-item">
 
-               
-              </li>
-              <!-- ------------------------link---------------- -->
-              <div class=" link ">
-              <a href="" > Try 1 month of Premium for ₹0</a>
-            </div>
-            </div>
-          </div>
-        </div>
-        
-        
-      </nav>
+                 <i class="netIcon fa-solid fa-user-group w-0"></i>
+                 <a class="nav-link active" aria-current="page" href="#">My Network</a>
+               </l>
+               </li>
+               <li class="nav-item align-items-center">
+                 <i class="jobIcon fa-solid fa-suitcase"></i>
+                 <a class="nav-link" href="#">Jobs</a>
+               </li>
+               <li class="nav-item align-items-center">
+                 <i class="msgIcon fa-solid fa-comment-dots"></i>
+                 <a class="nav-link" href="#">Messaging</a>
+               </li>
+               <li class="nav-item align-items-center">
+                 <i class="notIcon fa-solid fa-bell"></i>
+                 <a class="nav-link" href="#">Notifications</a>
+               </li>
+               <li class="nav-items dropdown align-items-center">
+                 <div class="container">
+                   <img src="./images/IMG_7745.JPG" alt="pro-pic" class="profile-pic img-fluid " />
+
+                 </div>
+                 <a class="proText nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                   Me
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li>
+                     <a class="dropdown-item" href="#">Another action</a>
+                   </li>
+                   <li>
+                     <hr class="dropdown-divider" />
+                   </li>
+                   <li>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                   </li>
+                 </ul>
+
+               </li>
+
+           </ul>
+           <div class="vertical-line"> </div>
+
+           <!-- --------------------after vertical_line------------------- -->
+           <li class="all-apps dropdown align-items-center" style="list-style-type: none" ;>
+             <div class="allApp container ">
+               <i class="fa-solid fa-table-cells"></i>
+             </div>
+             <a class=" nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+               For Bussiness
+             </a>
+             <ul class=" dropdown-menu">
+               <li><a class="dropdown-item" href="#">Action</a></li>
+               <li>
+                 <a class="dropdown-item" href="#">Another action</a>
+               </li>
+               <li>
+                 <hr class="dropdown-divider" />
+               </li>
+               <li>
+                 <a class="dropdown-item" href="#">Something else here</a>
+               </li>
+             </ul>
+
+           </li>
+           <!-- ------------------------nav-bar link---------------- -->
+           <div class=" link ">
+             <a href=""> Try 1 month of Premium for ₹0</a>
+           </div>
+         </div>
+       </div>
+   </div>
+
+   </nav>
+   </div>
+
+   <!-- ---------------------- left side bar------------------ -->
+   <div class="card   " style="width: 250px; height: 400px; margin-top: 90px;border-radius: 10px;margin-left: 100px;">
+   <img src="./images/cover-pic.JPG" class="card-img-top img-fluid " alt="..."
+     style="width: 248px;height: 55px;object-fit: cover; position:relative; ">
+
+   <img src="./images/IMG_7745.JPG" alt="pro-pic" class="rounded-circle img-fluid "
+   style="width: 80px; height: 80px; margin-left: 80px;position:absolute ;margin-top: 30px;z-index: 1;border:solid white">
+    <br>
+    <br>
+   <div class="pro-name w-100 h-25 text-center">
+    <h6 class="my-name mb-2 mt-4 " ><a href="" style="color: black;">Abhijith CB</a></h6>
+    <p class="job-name mb-0 ">Nodejs Developer</p>
+   </div>
+
+   <div class="view-impressions pv-3 d-flex   " style="justify-content: space-between;width: 100%; ">
+  <ul>
+    <div class="profile-views ">
+      <span class="label">Profile Viewers</span>
+      <span class="count">20</span>
     </div>
+    <div class="impression">
+      <span class="label">Impressions</span>
+      <span class="count">8</span>
+    </div>
+  </ul>
+</div>
 
-    <!-- ----------------------side bars------------------ -->
-   
 
-   
+<div class="premium-link" style=" border-bottom: 1px solid grey; padding:10px 3px ">
+  <h6 style="width:260px; font-size:12px ; padding-left: 12px;">Accelerate your career with Premium</h6>
+
+  <div class="try-sqr" style="padding: 0;">
+  <a href="" style="padding-left:8px ;font-size: 12px;font-family:Verdana, Geneva, Tahoma, sans-serif; color: black; ">
+    <i class="fa-solid fa-stop" style="color: #f29a02;height: 15px; font-size: large;padding-right: 5px; "></i>
+    Try for ₹0 </a>
+  </div>
+</div>
+
+<div class="my-items" style="display: flex; align-items: center;" >
+  <span> <i class="itemsIcn fa-solid fa-bookmark" style="padding-right: 5px; padding-left: 13px;"></i></span>
+  <b >My items</b>
+</div>
+
+</div>
+
+
+
+
   </body>
-</html>
+
+ </html>
